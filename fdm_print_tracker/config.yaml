@@ -1,0 +1,30 @@
+name: "FDM Print Tracker Pro"
+description: "3D printer farm, filament inventory, Moonraker/MQTT telemetry, quotes & invoicing (SQLite embedded)"
+version: "1.0.0"
+slug: "fdm_print_tracker"
+url: "https://hub.docker.com/r/costa82/fdmprinttrackerpro"
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: application
+boot: auto
+ports:
+  8080/tcp: 8085
+ports_description:
+  8080/tcp: "Web UI"
+webui: "http://[HOST]:[PORT:8085]"
+options:
+  tz: "Europe/Dublin"
+  mqtt_broker: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_username: ""
+  mqtt_password: ""
+  gemini_api_key: ""
+schema:
+  tz: str
+  mqtt_broker: str
+  mqtt_port: port
+  mqtt_username: str?
+  mqtt_password: password?
+  gemini_api_key: password?
