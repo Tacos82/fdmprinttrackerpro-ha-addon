@@ -1,6 +1,6 @@
 name: "FDM Print Tracker Pro"
 description: "3D printer farm, filament inventory, Moonraker/MQTT telemetry, quotes & invoicing (SQLite embedded)"
-version: "1.0.3"
+version: "1.0.4"
 slug: "fdm_print_tracker"
 url: "https://hub.docker.com/r/costa82/fdmprinttrackerpro"
 arch:
